@@ -23,6 +23,8 @@ h1 {
     color: #FFF;
     padding: 2rem;
     border-bottom: .5rem solid #000;
+    width: 100%;    
+
 }
 
 .subtitulo-texto {
@@ -81,11 +83,11 @@ main p {
     background-repeat: no-repeat;
     text-shadow: 1px 1px black;
     background-image: radial-gradient(ellipse at left bottom,
-        rgba(60, 29, 61, 0.8),
-        rgba(60, 29, 61, 0.8) 65%,
-        black 65%,
-        black 70%,
-        transparent 70%);
+    rgba(60, 29, 61, 0.8),
+    rgba(60, 29, 61, 0.8) 65%,
+    black 65%,
+    black 70%,
+    transparent 70%);
     background-size: 25% 100%;
 }
 
@@ -104,7 +106,7 @@ em {
     font-style: italic;
 }
 
-.icones-redes-sociais li {
+.icones-sociais li {
     display: inline-block;
 }
 
@@ -128,7 +130,7 @@ em {
 }
 
 main {
-    width: 80%;
+    width: calc(100% - 270px);
     float: left;
     padding-bottom: 4em;
 }
@@ -141,7 +143,7 @@ main {
 }
 
 .navegacao-site {
-    width: 20%;
+    width: 270px;
     float: right;
     position: relative;
     top: 300px;
@@ -182,3 +184,93 @@ main {
     background-color: black;
     transform: translateY(.5em) rotate(45deg);
 }
+.leia-mais {
+  padding: .5em;
+  margin: 1em;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #E6E7E8;
+  text-align: center; 
+}
+legend,
+label[for="mensagem"] {
+    font-weight: bold;
+    margin-top: 1em;
+}
+label[for] {
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+font-family: inherit;
+font-size: 100%;
+    padding: .25em .5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+input:focus,
+textarea:focus {
+    background-color: #FFD;
+}
+input:invalid {
+    box-shadow: 0 0 3px red;
+}
+button {
+    border: 0;
+    padding: .5em 1em;
+    font-family: "Open Sans Condensed", sans-serif;
+    background-color: #3C1D3D;
+    color: white;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-top: 1em;
+}
+button:hover,
+button:focus {
+    background-color: #8C1D3D;
+}
+fieldset > fieldset {
+    display: inline;
+}
+label[for="outro"] {
+    display: inline;
+}
+input[name="outro-assunto"] {
+    width: auto;
+}
+input[value="Outro"] ~ input {
+    display: none;
+}
+input[value="Outro"]:checked ~ input {
+    display: inline;
+}
+label[for="nome"] {
+    position: relative;
+}
+label[for="nome"]:after {
+    content: "";
+    background-color: #666;
+    background-color: no-repeat;
+    background-image: url(../imagens/usuario.png);
+    background-size: 50% 50%;
+    background-position: center;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+#nome {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
+}
+
+
+
+
+
+
